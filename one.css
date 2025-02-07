@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  background: linear-gradient(90deg, rgba(27,111,205,0.8995973389355743) 0%, rgba(201,22,219,0.3225665266106442) 100%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.to-do{
+  margin: 100px 400px;
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.to-do h2{
+  display: flex;
+  font-size: 1.7rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+  color: #1b6fcd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.to-do h2 img{
+  width: 35px;
+}
+
+.do-to-container{
+  background: #ded7d4;
+  padding: 11px;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.do-to-container input{
+  background: transparent;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 15px;
+  width: 70%;
+}
+
+.do-to-container button{
+  background-color: #d9753a;
+  color: white;
+  padding: 15px 35px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.do-to-container button:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 5px #d9753a;
+}
+
+.do-to-container button:active{
+  opacity: 0;
+}
+
+#list-container{
+  list-style: none;
+  padding: 40px 20px 13px 55px;
+  position: relative;
+}
+
+ul li{
+  font-size: 1.3rem;
+  font-weight: 550;
+  color: #333;
+  padding-bottom: 12px;
+  font-family: "Poppins";
+}
+
+ul li::before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url(immage/icons8-circle-50.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+}
+
+ul li.checked::before{
+  background-image: url(immage/fifa.png);
+}
+
+.checked{
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+ul li span{
+  width: 28px;
+  height: 28px;
+  color: #333;
+  position: absolute;
+  right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
+  
+}
+
+ul li span:hover{
+  transform: scale(1.05);
+}
